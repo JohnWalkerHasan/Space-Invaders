@@ -38,7 +38,6 @@ Built with **Pygame**, this project demonstrates object-oriented game design, co
 - Python 3.8 or higher  
 - Pygame (install via pip)
 
-```bash
 pip install pygame
 
 ## ▶️ Run the Game
