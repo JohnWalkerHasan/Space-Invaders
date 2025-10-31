@@ -179,6 +179,7 @@ def game_over_screen():
 
 def main():
     run=True
+    FPS = 90
     paused = False
     start_ticks = pygame.time.get_ticks()  
     level = 0 
@@ -222,6 +223,7 @@ def main():
     while run:
         start_ticks = pygame.time.get_ticks()
         while paused:
+            WIN.blit(BG, (0, 0))
             elapsed_time = (pygame.time.get_ticks() - start_ticks) / 1000
             WIN.fill((0, 0, 0))
             title_label = title_font.render(f"Paused... {elapsed_time:.2f}s", 1, (255, 255, 255))
@@ -235,6 +237,7 @@ def main():
                 if event.type == pygame.MOUSEBUTTONDOWN :
                     paused = False
                     start_ticks = pygame.time.get_ticks()  # Reset timer
+                
 
         clock.tick(90)
 

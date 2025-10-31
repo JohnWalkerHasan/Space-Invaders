@@ -231,7 +231,7 @@ def main():
             title_label = title_font.render("Paused.....", 1, (255,255,255))
             WIN.blit(title_label, (WIDTH/2- title_label.get_width()/2, 312))
             pygame.display.update()
-            pygame.time.wait()
+            pygame.time.wait(1000)
             #if event.type == pygame.K_RETURN or event.type == pygame.K_SPACE:
                 #continue
             
