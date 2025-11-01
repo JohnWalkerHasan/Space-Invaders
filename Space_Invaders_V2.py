@@ -221,24 +221,23 @@ def main():
         pygame.display.update()
 
     while run:
+        clock.tick(FPS)
         start_ticks = pygame.time.get_ticks()
-        while paused:           
+        while paused:          
+            redraw_window()
             elapsed_time = (pygame.time.get_ticks() - start_ticks) / 1000
-            WIN.blit(BG, (0, 0))
-            title_label = title_font.render(f"Paused... {elapsed_time:.2f}s", 1, (255, 255, 255))
+            title_label = title_font.render(f"Paused... {elapsed_time:.0f}s", 1, (255, 255, 255))
             WIN.blit(title_label, (WIDTH / 2 - title_label.get_width() / 2, HEIGHT / 2))
             pygame.display.update()
+            pygame.time.delay(1000)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     exit()
-                if event.type == pygame.MOUSEBUTTONDOWN :
+                if event.type == pygame.MOUSEBUTTONDOWN or event.type == pygame.KEYDOWN :
                     paused = False
                     start_ticks = pygame.time.get_ticks()  # Reset timer
-                
-
-        clock.tick(90)
 
         redraw_window()
         
