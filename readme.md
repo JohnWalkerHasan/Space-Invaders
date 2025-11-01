@@ -28,7 +28,8 @@ Built with **Pygame**, this project demonstrates object-oriented game design, co
 
 ## 🧩 V2 Changes
 - **New Pause Functionality:**  
-  Press `P` to pause/resume the game anytime.
+  Press `esc` to pause the game anytime.
+  Click any key or press mouse button to resume.
 - **Performance Optimizations:**  
   Improved frame update logic and cleaner collision checks for smoother gameplay.
 
@@ -40,31 +41,45 @@ Built with **Pygame**, this project demonstrates object-oriented game design, co
 
 pip install pygame
 
+---
+
 ## ▶️ Run the Game
 
-Clone or download this repository.
-Navigate to the project directory.
-Run the main script:
-python space_invaders.py
+- Clone or download this repository.
+- Navigate to the project directory.
+- Run the main script:
+- python Space_Invaders_V2.py or python3 Space_Invaders_V2.py
+
+---
 
 ## 🎮 Controls
-Action	Key
-Move Left	← or A
-Move Right	→ or D
-Shoot	Spacebar
-Pause/Resume	P
-Quit	ESC
+
+- Move Left `←`
+- Move Right `→`
+- Shoot	`Space`
+- Pause `esc`
+- Quit Window Button `❌`
+
+---
+
 ## 🧱 Project Structure
-space_invaders.py     # Main game file
-assets/               # Sprites, icons, and background
-README.md             # Project info
+
+- assets/
+- Space_Invaders.py
+- Space_Invaders_V2.py
+- readme.md
+- requirements.txt
+- test_dummy.py
+
+---
 
 ## 🧾 License
 
-This project is released under the MIT License.
-Feel free to modify and use for learning or portfolio purposes.
+This project is released under the MIT License. Feel free to modify and use for learning or portfolio purposes.
+
+---
 
 ## 💡 Author Notes
 
-Space Invaders v2 was designed as a step-up version with better performance and code hygiene.
+Space Invaders v2 was designed as a step-up version with better performance and code hygiene. Perfected pause functionality as well.
 Future plans include power-ups, boss waves, and leaderboard integration.
