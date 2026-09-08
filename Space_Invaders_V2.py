@@ -6,7 +6,7 @@ pygame.font.init()
 
 title_font = pygame.font.SysFont("comicsans", 56)
 
-WIDTH, HEIGHT = 1366, 768
+WIDTH, HEIGHT = 1920, 1080
 WIN = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Space Invaders")
 
@@ -227,7 +227,7 @@ def main():
             redraw_window()
             elapsed_time = (pygame.time.get_ticks() - start_ticks) / 1000
             title_label = title_font.render(f"Paused... {elapsed_time:.0f}s", 1, (255, 255, 255))
-            WIN.blit(title_label, (WIDTH / 2 - title_label.get_width() / 2, HEIGHT / 2))
+            WIN.blit(title_label, (WIDTH / 2 - title_label.get_width() / 2, HEIGHT / 2 - title_label.get_height() / 2))
             pygame.display.update()
             pygame.time.delay(1000)
 
