@@ -6,7 +6,7 @@ pygame.font.init()
 
 title_font = pygame.font.SysFont("comicsans", 56)
 
-WIDTH, HEIGHT = 1920, 1080
+WIDTH, HEIGHT = 1280, 800
 WIN = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Space Invaders")
 
